@@ -19,18 +19,6 @@ function Header() {
             <li style={styles.navItem}>Support</li>
           </ul>
         </nav>
-        <div style={styles.search}>
-          <input type="text" placeholder="Search" style={styles.searchInput} />
-          <button
-            style={{
-              padding: "5px 10px",
-              backgroundColor: "black",
-              color: "white",
-            }}
-          >
-            Search
-          </button>
-        </div>
       </div>
     </header>
   );
@@ -55,7 +43,7 @@ const styles = {
   },
   nav: {
     textAlign: "center",
-    marginRight: "10px", // Adjust spacing between navigation and search bar
+    marginRight: "10px", // Adjust spacing between navigation and logo
   },
   navList: {
     listStyleType: "none",
@@ -65,14 +53,6 @@ const styles = {
   },
   navItem: {
     marginRight: "10px", // Space between navigation items
-  },
-  search: {
-    display: "flex",
-    alignItems: "center",
-  },
-  searchInput: {
-    padding: "5px",
-    marginRight: "10px",
   },
 };
 
