@@ -136,36 +136,6 @@ function Content() {
           <div style={styles.arrow}></div>
         </button>
       </div>
-      <div style={styles.contactForm}>
-        <h2>Contact Us</h2>
-        <div style={styles.contactFormFields}>
-          <div style={styles.left}>
-            <label>First Name:</label>
-            <br />
-            <input type="text" style={styles.input} />
-            <br />
-            <label>Last Name:</label>
-            <br />
-            <input type="text" style={styles.input} />
-          </div>
-          <div style={styles.right}>
-            <label>Email Address:</label>
-            <br />
-            <input type="email" style={styles.input} />
-            <br />
-            <label>Phone No.:</label>
-            <br />
-            <input type="tel" style={styles.input} />
-            <br />
-            <label>Address:</label>
-            <br />
-            <input type="text" style={styles.input} />
-          </div>
-        </div>
-        <div style={{ textAlign: "center" }}>
-          <button style={styles.submitButton}>Submit</button>
-        </div>
-      </div>
     </main>
   );
 }
@@ -229,29 +199,6 @@ const styles = {
     borderLeft: "5px solid transparent",
     borderRight: "5px solid transparent",
     borderTop: "5px solid black",
-  },
-  contactForm: {
-    marginTop: "40px",
-    textAlign: "center",
-  },
-  contactFormFields: {
-    display: "flex",
-    justifyContent: "space-between",
-  },
-  input: {
-    width: "90%",
-    padding: "8px",
-    margin: "5px 0",
-    boxSizing: "border-box",
-  },
-  submitButton: {
-    backgroundColor: "black",
-    color: "white",
-    padding: "12px 16px",
-    fontSize: "16px",
-    border: "none",
-    cursor: "pointer",
-    borderRadius: "5px",
   },
 };
 
