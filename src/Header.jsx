@@ -1,6 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 
 function Header() {
+  const [moreDropdownOpen, setMoreDropdownOpen] = useState(false);
+  const [servicesDropdownOpen, setServicesDropdownOpen] = useState(false);
+
+  const toggleMoreDropdown = () => {
+    setMoreDropdownOpen(!moreDropdownOpen);
+  };
+
+  const toggleServicesDropdown = () => {
+    setServicesDropdownOpen(!servicesDropdownOpen);
+  };
+
   return (
     <header style={styles.header}>
       <div style={styles.logo}>
@@ -14,9 +25,69 @@ function Header() {
         <nav style={styles.nav}>
           <ul style={styles.navList}>
             <li style={styles.navItem}>Home</li>
-            <li style={styles.navItem}>Services</li>
-            <li style={styles.navItem}>Blog</li>
-            <li style={styles.navItem}>Support</li>
+            <li style={styles.navItem}>About Us</li>
+            <li
+              style={{ ...styles.navItem, position: "relative" }}
+              onMouseEnter={toggleServicesDropdown}
+              onMouseLeave={toggleServicesDropdown}
+            >
+              Services
+              {servicesDropdownOpen && (
+                <ul style={styles.dropdown}>
+                  <li style={styles.dropdownItem}>
+                    <a href="/ai-ml" style={styles.dropdownLink}>
+                      AI/ML
+                    </a>
+                  </li>
+                  <li style={styles.dropdownItem}>
+                    <a href="/mobile-app-dev" style={styles.dropdownLink}>
+                      Mobile App Dev
+                    </a>
+                  </li>
+                  <li style={styles.dropdownItem}>
+                    <a href="/web-development" style={styles.dropdownLink}>
+                      Web Development
+                    </a>
+                  </li>
+                  <li style={styles.dropdownItem}>
+                    <a href="/wordpress" style={styles.dropdownLink}>
+                      Wordpress
+                    </a>
+                  </li>
+                </ul>
+              )}
+            </li>
+            <li
+              style={{ ...styles.navItem, position: "relative" }}
+              onMouseEnter={toggleMoreDropdown}
+              onMouseLeave={toggleMoreDropdown}
+            >
+              More
+              {moreDropdownOpen && (
+                <ul style={styles.dropdown}>
+                  <li style={styles.dropdownItem}>
+                    <a href="/blog" style={styles.dropdownLink}>
+                      Blog
+                    </a>
+                  </li>
+                  <li style={styles.dropdownItem}>
+                    <a href="/pitch" style={styles.dropdownLink}>
+                      Pitch
+                    </a>
+                  </li>
+                  <li style={styles.dropdownItem}>
+                    <a href="/investor" style={styles.dropdownLink}>
+                      Investor
+                    </a>
+                  </li>
+                  <li style={styles.dropdownItem}>
+                    <a href="/careers" style={styles.dropdownLink}>
+                      Careers
+                    </a>
+                  </li>
+                </ul>
+              )}
+            </li>
           </ul>
         </nav>
       </div>
@@ -34,25 +105,41 @@ const styles = {
     alignItems: "center",
     borderBottom: "1px solid #ddd",
   },
-  logo: {
-    marginRight: "auto", // Pushes the logo to the left
-  },
+  logo: {},
   rightSection: {
     display: "flex",
     alignItems: "center",
   },
-  nav: {
-    textAlign: "center",
-    marginRight: "10px", // Adjust spacing between navigation and logo
-  },
+  nav: {},
   navList: {
     listStyleType: "none",
     padding: 0,
     display: "flex",
-    justifyContent: "space-around",
   },
   navItem: {
     marginRight: "10px", // Space between navigation items
+    position: "relative",
+    cursor: "pointer",
+  },
+  dropdown: {
+    position: "absolute",
+    top: "100%",
+    left: 0,
+    backgroundColor: "black", // Background color of the dropdown
+    border: "1px solid #ddd",
+    borderRadius: "4px",
+    padding: 0,
+    minWidth: "150px",
+    zIndex: 1,
+    display: "block", // Updated display property to show the dropdown
+    listStyleType: "none", // Remove bullet points
+  },
+  dropdownItem: {
+    padding: "10px",
+  },
+  dropdownLink: {
+    color: "white",
+    textDecoration: "none",
   },
 };
 
