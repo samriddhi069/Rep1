@@ -25,6 +25,44 @@ function Footer() {
           <p>Address: 123 Main St, City, Country</p>
         </div>
       </div>
+      <div style={styles.middleSection}>
+        <div style={styles.services}>
+          <h3 style={styles.subheading}>Services</h3>
+          <div style={styles.linkList}>
+            <a href="/ai-ml" style={styles.link}>
+              AI/ML
+            </a>
+            <a href="/mobile-app-dev" style={styles.link}>
+              Mobile App Dev
+            </a>
+            <a href="/android-app-dev" style={styles.link}>
+              Android App Dev
+            </a>
+            <a href="/web-development" style={styles.link}>
+              Web Development
+            </a>
+            <a href="/wordpress" style={styles.link}>
+              Wordpress
+            </a>
+          </div>
+        </div>
+        <div style={styles.links}>
+          <div style={styles.linkList}>
+            <a href="/blogs" style={styles.link}>
+              Blogs
+            </a>
+            <a href="/about-us" style={styles.link}>
+              About Us
+            </a>
+            <a href="/investors" style={styles.link}>
+              Investors
+            </a>
+            <a href="/careers" style={styles.link}>
+              Careers
+            </a>
+          </div>
+        </div>
+      </div>
       <div style={styles.rightSection}>
         <div style={styles.contactSection}>
           <h3>Contact Us</h3>
@@ -59,6 +97,25 @@ const styles = {
     marginBottom: "20px",
     flex: 1,
   },
+  middleSection: {
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "center",
+    marginBottom: "20px",
+    flex: 2,
+  },
+  services: {
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    flex: 1,
+  },
+  links: {
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    flex: 1,
+  },
   rightSection: {
     display: "flex",
     flexDirection: "column",
@@ -79,6 +136,20 @@ const styles = {
   },
   contactInfo: {
     textAlign: "left",
+  },
+  subheading: {
+    color: "white",
+    marginBottom: "10px",
+  },
+  linkList: {
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+  },
+  link: {
+    color: "white",
+    textDecoration: "none",
+    marginBottom: "5px",
   },
   contactSection: {
     width: "100%",
