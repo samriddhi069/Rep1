@@ -5,7 +5,11 @@ function Footer() {
   return (
     <footer style={styles.footer}>
       <div style={styles.leftSection}>
-        <p>AIntelligence Technologies</p>
+        <h3>AIntelligence Technologies</h3>
+        <p style={styles.description}>
+          We provide cutting-edge AI and ML solutions to help businesses
+          innovate and grow.
+        </p>
         <div style={styles.socialIcons}>
           <a href="https://www.instagram.com">
             <FaInstagram style={styles.icon} />
@@ -88,6 +92,7 @@ const styles = {
     color: "white",
     display: "flex",
     justifyContent: "space-between",
+    alignItems: "flex-start",
     flexWrap: "wrap",
   },
   leftSection: {
@@ -97,12 +102,16 @@ const styles = {
     marginBottom: "20px",
     flex: 1,
   },
+  description: {
+    marginBottom: "10px",
+  },
   middleSection: {
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center",
     marginBottom: "20px",
     flex: 2,
+    padding: "0 20px",
   },
   services: {
     display: "flex",
@@ -149,7 +158,8 @@ const styles = {
   link: {
     color: "white",
     textDecoration: "none",
-    marginBottom: "5px",
+    marginBottom: "10px",
+    fontSize: "1.1rem",
   },
   contactSection: {
     width: "100%",
