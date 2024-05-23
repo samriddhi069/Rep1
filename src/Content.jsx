@@ -7,16 +7,15 @@ function Content() {
         <div style={styles.left}>
           <h2>Who We Are</h2>
           <p>
-            Body text for your whole article or post. We’ll put in some lorem
-            ipsum to show how a filled-out page might look: Excepteur efficient
-            emerging, minim veniam anim aute carefully curated Ginza
-            conversation exquisite perfect nostrud nisi intricate Content. Qui
-            international first-class nulla ut. Punctual adipisicing, essential
-            lovely queen tempor eiusmod irure. Exclusive izakaya charming
-            Scandinavian impeccable aute quality of life soft power pariatur
-            Melbourne occaecat discerning. Qui wardrobe aliquip, et Porter
-            destination Toto remarkable officia Helsinki excepteur Basset hound.
-            Zürich sleepy perfect consectetur.
+            AIntelligence Technologies is a dynamic software company
+            specializing in the creation,maintenance, and optimization of
+            software across various platforms. Our expertise spans fromcrafting
+            seamless websites to developing intuitive Mobile applications, and
+            delving into the realm of AI and machine learning. In addition to
+            our software development prowess, we proudly invest in startups,
+            providing vital support for their software needs. By nurturing
+            emerging talent andfostering innovation, we contribute to the growth
+            and success of the broader tech ecosystem
           </p>
         </div>
         <div style={styles.right}>
@@ -38,16 +37,14 @@ function Content() {
         <div style={styles.right}>
           <h2>Our Vision</h2>
           <p>
-            Body text for your whole article or post. We’ll put in some lorem
-            ipsum to show how a filled-out page might look: Excepteur efficient
-            emerging, minim veniam anim aute carefully curated Ginza
-            conversation exquisite perfect nostrud nisi intricate Content. Qui
-            international first-class nulla ut. Punctual adipisicing, essential
-            lovely queen tempor eiusmod irure. Exclusive izakaya charming
-            Scandinavian impeccable aute quality of life soft power pariatur
-            Melbourne occaecat discerning. Qui wardrobe aliquip, et Porter
-            destination Toto remarkable officia Helsinki excepteur Basset hound.
-            Zürich sleepy perfect consectetur.
+            Our vision is to redefine the possibilities of software technology,
+            pushing the boundaries of what is achievable. We envision a future
+            where software is not just a tool, but a catalyst for positive
+            change. Through our innovative approach to problem-solving, we seek
+            to inspire a new era of innovation, where software becomes
+            synonymous with progress and opportunity. At AIntelligence
+            Technologies, we aim to be global leaders in technology, recognized
+            for our commitment to quality, innovation, and customer satisfaction
           </p>
         </div>
       </div>

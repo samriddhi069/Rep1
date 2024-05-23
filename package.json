@@ -27,4 +27,11 @@
     "not ie <= 11",
     "not op_mini all"
   ]
+  
+  {
+    "dependencies": {
+      "react-spring": "9.4.5"
+    }
+  }
+    
 }
