@@ -26,6 +26,7 @@ function Footer() {
         </div>
         <div style={styles.contactInfo}>
           <p>Email: aintelligencetechnologies@gmail.com</p>
+          <p>Phone: 9016708807 </p>
           <p>Address: Ahmedabad, Gujrat, India</p>
         </div>
       </div>
