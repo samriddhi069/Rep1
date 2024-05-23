@@ -57,6 +57,9 @@ function Header() {
                 </ul>
               )}
             </li>
+            <a href="#footer" style={styles.contactLink}>
+              Contact Us
+            </a>
             <li
               style={{ ...styles.navItem, position: "relative" }}
               onMouseEnter={toggleMoreDropdown}
@@ -140,6 +143,11 @@ const styles = {
   dropdownLink: {
     color: "white",
     textDecoration: "none",
+  },
+  contactLink: {
+    color: "black", // Change color to black
+    textDecoration: "none",
+    marginRight: "10px",
   },
 };
 
